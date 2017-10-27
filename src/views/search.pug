@@ -6,9 +6,12 @@ html
 	body
 		
 		.container
-			fieldset.fieldset-search
+			img(src="icon.jpeg" class="icon" id="icon")
+			p.icon Please click to icon to search for users
+			div.wrapper
+				//- div.fieldset-search
+				h4 Search your Particulars in here
 				form.search-form(action='/searchName', method='post')
-					h4 Search your Particulars in here
 					input.name-search(type='text', name='name', placeholder='Enter Firstname or Lastname', required='')
 					input.submit-search(type='submit', name='submit', value='Search')
 
@@ -16,3 +19,14 @@ html
 			p= usersJson
 		else
 			p= error
+
+	script(src="https://code.jquery.com/jquery-3.2.1.js")
+	script.
+		$(document).ready(function() {
+			$('.wrapper').hide();
+
+			$('#icon').click(function () {
+				$('.wrapper').show();
+				$('.icon').hide();
+			});
+		});

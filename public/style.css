@@ -5,10 +5,9 @@ body {
 
 h4 {
     font-size: 30px;
-    text-align: left;
+    text-align: center;
     font-style: oblique;
     color: #d3d3d3;
-    text-indent:
 }
 
 h2 {
@@ -33,26 +32,33 @@ p {
 }
 
 .container {
-
     font-size: 30px;
     border: none;
 }
 
-.fieldset-search {
+.container>img {
+    padding-top: 20px;
+    display: block;  
+    margin-left: auto;
+    margin-right: auto; 
+}
 
-    margin: 35px 130px;
-    padding: 37px 124px;
-    border: none;
+#icon:hover {
+    cursor: pointer;
 }
 
 .search-form {
-
-    background-image: url('icon.jpeg');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    text-align: center;
+    /*padding: 12px 20px 12px 40px;*/
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+}
+
+.wrapper {
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .name-search {
@@ -64,7 +70,7 @@ p {
 .submit-search {
     padding: 23px 48px;
     text-align: center;
-    margin: 14px 38px 39px 181px;
+    margin: 20px;
 }
 
 .submit-search:hover {
