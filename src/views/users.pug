@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type='text/css', href='style.css')
+  body
+    .navigation
+      ul.nav
+        li
+          img(src='userlogo.png')
+        li
+          a(href="index.pug") Home
+        li
+          a(href="search.pug") User Search
+        li
+          a(href="signup.pug") Sign Up
+        li
+          a(href="users.pug") All Users
+    .displayusers
+      h3 User's Database List
+        each name in userData
+          h2= name.firstname
+
+    
